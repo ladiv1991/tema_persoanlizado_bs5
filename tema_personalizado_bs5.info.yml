@@ -1,0 +1,41 @@
+name: 'Personalizado BS5'
+description: 'Tema personalizado usando componentes en Drupal 11 con BS5'
+core_version_requirement: ^11
+engine: twig
+type: theme
+'base theme': false
+screenshot: screenshot.png
+'alt text': 'Tema personalizado.'
+regions:
+  top_bar: 'Top bar'
+  navbar_branding: 'Navbar branding'
+  navigation: 'Navigation (Desktop and Collapse)'
+  highlighted: Highlighted
+  content_above: 'Content above'
+  primary_sidebar: 'Primary sidebar'
+  content: Content
+  secondary_sidebar: 'Secondary sidebar'
+  content_below: 'Content below'
+  footer_top: 'Footer top'
+  footer_bottom: 'Footer bottom'
+libraries:
+  - tema_personalizado_bs5/framework
+libraries-override:
+  content_moderation/content_moderation: tema_personalizado_bs5/content_moderation
+  varbase_components/popper-script: tema_personalizado_bs5/popper-script
+  varbase_components/bs-base-component-script: tema_personalizado_bs5/bs-base-component-script
+  varbase_components/bs-modal-script: tema_personalizado_bs5/bs-modal-script
+  varbase_components/bs-offcanvas-script: tema_personalizado_bs5/bs-offcanvas-script
+  varbase_components/bs-popover-script: tema_personalizado_bs5/bs-popover-script
+  varbase_components/bs-scrollspy-script: tema_personalizado_bs5/bs-scrollspy-script
+  varbase_components/bs-tab-script: tema_personalizado_bs5/bs-tab-script
+  varbase_components/bs-toast-script: tema_personalizado_bs5/bs-toast-script
+  varbase_components/bs-tooltip-script: tema_personalizado_bs5/bs-tooltip-script
+ckeditor_stylesheets: false
+ckeditor5-stylesheets:
+  - css/base/ckeditor5.bootstrap.base.css
+enforce_prop_schemas: false
+version: 1.0.0
+project: tema_personalizado_bs5
+datestamp: 1745183253
+generator: 'tema_personalizado_bs5:4.0.0-alpha3'
